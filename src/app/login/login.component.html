@@ -1,0 +1,17 @@
+<div class="container d-flex justify-content-center align-items-center ">
+    <div class="row divForm rounded">
+        <h1>Login</h1>
+        <form (ngSubmit)="onSubmit()">
+            <div class="my-4">
+                <label>Username</label>
+                <input type="text" [(ngModel)]="username" name="username" required class="form-control">
+            </div>
+            <div class="my-4">
+                <label>Password</label>
+                <input type="password" [(ngModel)]="password" name="password" required class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+</div>
