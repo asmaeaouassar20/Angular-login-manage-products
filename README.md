@@ -1,59 +1,22 @@
-# AngularAuthApp
+# Angular app : Product Management
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+## Fonctionnalités 
+- Login
+- Ajouter une tâche à la liste
+- Marquer une tâche comme terminée
+- Supprimer une tâche de la liste
+- Afficher la liste des tâches
+- Logout
 
-## Development server
+## screenshots
 
-To start a local development server, run:
+<div>
+    <img src="https://github.com/user-attachments/assets/1965557b-01db-4ea6-ad4d-135653da8286" style="width:600px">
+<img src="https://github.com/user-attachments/assets/a87631d6-1b5f-425a-909f-34117fbd94c8" style="width:600px">
+<img src="https://github.com/user-attachments/assets/6b6a856d-403b-4493-a0e6-215c4fcbc746" style="width:600px">
+<img src="https://github.com/user-attachments/assets/3ce20886-4ff8-4795-84ad-69332faa3411" style="width:600px">
+<img src="https://github.com/user-attachments/assets/2d680ab6-fc09-4d9a-a5e0-4c9b00cde46a" style="width:600px">
+<img src="https://github.com/user-attachments/assets/9f2d3871-8d35-4e61-af3e-fc482df1335c" style="width:600px">
+<img src="https://github.com/user-attachments/assets/04087ef3-325e-4b37-9c9f-91fd6485cda7" style="width:600px">
+</div>
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
