@@ -1,14 +1,5 @@
 # Angular app : Product Management
 
-## Fonctionnalités 
-- Login
-- Ajouter une tâche à la liste
-- Marquer une tâche comme terminée
-- Supprimer une tâche de la liste
-- Afficher la liste des tâches
-- Logout
-
-## screenshots
 
 <div>
     <img src="https://github.com/user-attachments/assets/1965557b-01db-4ea6-ad4d-135653da8286" style="width:600px">
