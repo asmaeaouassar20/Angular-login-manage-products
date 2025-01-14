@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 import { AuthService } from '../service/auth.service';
-import { Router } from '@angular/router';
-import { FormsModule} from '@angular/forms';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,19 +10,15 @@ import { FormsModule} from '@angular/forms';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  username:string='';
-  password:string='';
 
+  username:string ='';  
+  password : string ='';
   constructor(private authService:AuthService , private router:Router){}
 
-  onSubmit():void{
+  login(){
     if(this.authService.login(this.username,this.password)){
-      this.router.navigate(['/dashboard']);
-    }else{
-      alert("Identifiants Incorrects")
+      this.router.navigate(['/products']);
     }
   }
-
-
 
 }

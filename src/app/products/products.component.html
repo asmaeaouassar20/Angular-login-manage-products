@@ -1,0 +1,90 @@
+<div class="container mt-5 d-flex justify-content-center align-items-center">
+    <div class="row w-75">
+        <div class="row">
+
+            @if (!editMode) {
+            <div>
+                <h1>Add New Product</h1>
+
+                <div class="my-4">
+                    <label class="form-label">Product Name</label>
+                    <input class="form-control" [(ngModel)]="newProduct.name" type="text"
+                        placeholder="Enter name of product">
+                </div>
+                <div class="my-4">
+                    <label class="form-label">Product Quantity</label>
+                    <input class="form-control" [(ngModel)]="newProduct.quantity" type="number"
+                        placeholder="Enter quantity">
+                </div>
+                <div class="my-4">
+                    <label class="form-label">Product Price</label>
+                    <input class="form-control" [(ngModel)]="newProduct.price" type="number"
+                        placeholder="Enter the price of the product">
+                </div>
+                <div class="my-4">
+                    <button class="btn btn-primary" (click)="AddProduct(newProduct)">Add Product</button>
+
+                </div>
+            </div>
+            }@else{
+            <div>
+                <h1>Edit Product</h1>
+
+                <div class="my-4">
+                    <label class="form-label">Product Name</label>
+                    <input class="form-control" [(ngModel)]="productToEdit.name" type="text"
+                        placeholder="Enter new name of the product">
+                </div>
+                <div class="my-4">
+                    <label class="form-label">Product Quantity</label>
+                    <input class="form-control" [(ngModel)]="productToEdit.quantity" type="number"
+                        placeholder="Enter quantity of new product">
+                </div>
+                <div class="my-4">
+                    <label class="form-label">Product Price</label>
+                    <input class="form-control" [(ngModel)]="productToEdit.price" type="number"
+                        placeholder="Enter the new price of the product">
+                </div>
+                <div class="my-4">
+                    <button class="btn btn-success" (click)="editProduct(indexEdit)">Edit</button>
+                    <button class="btn btn-warning m-2" (click)="editMode=false">cancel</button>
+
+                </div>
+            </div>
+            }
+
+            <table class="table text-center mt-5">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (item of products; track $index) {
+                    <tr>
+                        <td>{{item.name}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.price}}</td>
+                        <td *ngIf="editMode==false">
+                            <button class="btn btn-secondary m-2" (click)="toggleMode(item,$index)">edit</button>
+                            <button class="btn btn-danger m-2" (click)="deleteProduct($index)">delete</button>
+                        </td>
+                    </tr>
+
+                    }
+                    <th></th>
+                </tbody>
+            </table>
+
+
+
+
+
+            <button class="btn btn-link my-5" (click)="logout()">Logout</button>
+
+        </div>
+
+    </div>
